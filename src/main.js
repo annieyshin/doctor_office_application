@@ -7,7 +7,7 @@ import { DoctorAPI } from './better_doctor.js';
 $(document).ready(function() {
   $('#form-input').submit(function(event) {
     event.preventDefault();
-    let doctorName = $('#name_input').val();
+    let doctorName = $('#doctor_name_input').val();
     let doctorSpecialty = $('#specialty_input').val();
     let doctorAddress = $('#address_input').val();
     let doctor = new DoctorAPI();
@@ -18,8 +18,8 @@ $(document).ready(function() {
         $('#results').append(
         `<div class="card">
           <h1>${doctor.name}</h1>
-          <h2> Address: ${doctor.address}</h2>
           <h2> Specialty: ${doctor.specialty}</h2>
+          <h2> Address: ${doctor.address}</h2>
         </div>`
         );
       });
