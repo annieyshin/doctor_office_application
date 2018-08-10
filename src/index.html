@@ -4,21 +4,24 @@
   <title>Doctor's Office</title>
 </head>
 <body>
-  <h1>Better Doctor Directory</h1>
-  <h3>Find the right doctor or provider for you!</h3>
   <div class="container">
-
+    <div class="jumbotron">
+      <h1>Better Doctor Directory</h1>
+      <h4 id="blue_text">Find the right doctor or provider for you!</h4>
+    </div>
     <form id="form-input" >
-      <label for="condition_input">Enter a medical condition</label>
-      <input id="condition_input" type="text" name="condition_input">
       <label for="doctor_name_input">Enter Doctor's Name</label>
       <input id="doctor_name_input" type="text" name="doctor_name_input">
-      <button id="btn_submit" type="submit" class="btn btn-success" name="button">Submit Information</button>
+      <label for="specialty_input">Enter a medical condition</label>
+      <input id="specialty_input" type="text" name="specialty_input">
+      <br>
+      <br>
+      <button id="btn_submit" type="submit" class="btn btn-info" name="button">Submit Information</button>
     </form>
     <div id="results">
       <h1 id="doctor_name_output"></h1>
-      <h2 id="gender"></h2>
-      <h2 id="status"></h2>
+      <h2 id="doctor_address"></h2>
+      <h2 id="doctor_specialty"></h2>
     </div>
   </div>
 </body>

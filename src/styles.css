@@ -1,3 +1,14 @@
 body {
   background-color: #fffff0;
 }
+
+
+.container {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+#blue_text {
+  color: blue;
+  font-family: sans-serif;
+}
