@@ -5,6 +5,8 @@
 </head>
 <body>
   <div class="container">
+    <h1 id="doctor_name_output"></h1>
+    <h2 id="doctor_query"></h2>
     <div class="jumbotron">
       <h1>Better Doctor Directory</h1>
       <h4 id="blue_text">Find the right doctor or provider for you!</h4>
@@ -12,17 +14,13 @@
     <form id="form-input" >
       <br>
       <br>
-      <label for="doctor_name_input">Enter Doctor's Name</label>
+      <label for="name_input">Enter Doctor's Name</label>
       <br>
-      <input id="doctor_name_input" type="text" name="doctor_name_input">
+      <input id="name_input" type="text" name="name_input">
       <br>
-      <label for="specialty_input">Enter a medical condition</label>
+      <label for="query_input">Enter a medical condition</label>
       <br>
-      <input id="specialty_input" type="text" name="specialty_input">
-      <br>
-      <label for="address_input">Enter an address</label>
-      <br>
-      <input id="address_input" type="text" name="address_input">
+      <input id="query_input" type="text" name="query_input">
       <br>
       <br>
       <button id="btn_submit" type="submit" class="btn btn-info" name="button">Submit Information</button>
@@ -31,10 +29,7 @@
       <br>
     </form>
     <div id="results">
-      <p>List of Doctors in your area:</p>
-      <h1 id="doctor_name_output"></h1>
-      <h2 id="doctor_address"></h2>
-      <h2 id="doctor_specialty"></h2>
+
     </div>
   </div>
 </body>

@@ -7,19 +7,19 @@ import { DoctorAPI } from './better_doctor.js';
 $(document).ready(function() {
   $('#form-input').submit(function(event) {
     event.preventDefault();
-    let doctorName = $('#doctor_name_input').val();
-    let doctorSpecialty = $('#specialty_input').val();
-    let doctorAddress = $('#address_input').val();
+    let doctorName = $('#name_input').val();
+    let doctorQuery = $('#query_input').val();
     let doctor = new DoctorAPI();
-    let promise = doctor.getDoctors({name: doctorName, specialty: doctorSpecialty, address: doctorAddress});
+    let promise = doctor.getDoctors({name: doctorName, query: doctorQuery});
     promise.then(function(response) {
       let body = JSON.parse(response);
-      body.results.forEach(function(doctor) {
+      console.log(body.data);
+      body.data.forEach(function(doctor) {
         $('#results').append(
         `<div class="card">
-          <h1>${doctor.name}</h1>
-          <h2> Specialty: ${doctor.specialty}</h2>
-          <h2> Address: ${doctor.address}</h2>
+          <h1>${doctor.profile.first_name} ${doctor.profile.middle_name} ${doctor.profile.last_name} </h1>
+          <h1>${doctor.practices.name} </h1>
+          <h2> Specialty: ${doctor.description}</h2>
         </div>`
         );
       });

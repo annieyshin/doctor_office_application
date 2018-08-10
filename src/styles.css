@@ -20,6 +20,6 @@ body {
 }
 
 #results {
-  display: none;
+  /* display: none; */
   text-align: center;
 }
