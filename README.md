@@ -1,12 +1,13 @@
-# Project Title
+# Better Doctor Office
 
-#### Epicodus JavaScript exercise, Date
+#### Epicodus JavaScript Project Week 2, August 10, 2018
 
-#### By Your Name Here
+#### By Annie Shin
 
 ## Description
 
-Add description here
+Website that will call Better Doctors API to pull up doctor information based upon user entered data. User will be able to enter a medical condition or search by doctor's name to find the right physicians and doctors in a given area based on medical condition or name query.
+
 
 ## Specs
 
@@ -45,10 +46,11 @@ Add description here
 
 ## Links
 
-* Add links here
+* To visit this repository, go to: https://github.com/annieyshin/doctor_office_application.git
+* To report any bugs, or if you have any questions, feel free to email me at: annieyshin@gmail.Commit
 
 ## License
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2018 **Your Name Here**
+Copyright (c) 2018 **Annie Shine**
