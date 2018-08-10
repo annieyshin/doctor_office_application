@@ -18,7 +18,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Journal Assignment',
+      title: 'doctor_office',
       template: './src/index.html',
       inject: 'body'
     }),
@@ -33,7 +33,7 @@ module.exports = {
           'css-loader'
         ]
       },
-      {              
+      {
         test: /\.js$/,
         exclude: [
           /node_modules/,
