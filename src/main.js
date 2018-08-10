@@ -11,7 +11,7 @@ $(document).ready(function() {
     let doctorSpecialty = $('#specialty_input').val();
     let doctorAddress = $('#address_input').val();
     let doctor = new DoctorAPI();
-    let promise = doctor.getCharacters({name: doctorName, specialty: doctorSpecialty, address: doctorAddress});
+    let promise = doctor.getDoctors({name: doctorName, specialty: doctorSpecialty, address: doctorAddress});
     promise.then(function(response) {
       let body = JSON.parse(response);
       body.results.forEach(function(doctor) {

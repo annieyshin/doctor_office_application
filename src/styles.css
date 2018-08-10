@@ -1,5 +1,5 @@
 body {
-  background-color: #fffff0;
+  background-color: #f0ffbc;
 }
 
 
@@ -11,4 +11,15 @@ body {
 #blue_text {
   color: blue;
   font-family: sans-serif;
+}
+
+#form-input {
+  text-align: center;
+  border: 2px solid yellow;
+  padding: 5px;
+}
+
+#results {
+  display: none;
+  text-align: center;
 }
