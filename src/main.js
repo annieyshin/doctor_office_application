@@ -14,16 +14,15 @@ $(document).ready(function() {
     promise.then(function(response) {
       let body = JSON.parse(response);
       console.log(body.data);
-
       body.data.forEach(function(doctor) {
         $('#results').append(
         `<div class="card">
-          <h1>${doctor.profile.first_name} ${doctor.profile.middle_name} ${doctor.profile.last_name} </h1>
-          <h3>${doctor.practices[i].website} </h3>
-          <h2> Specialty: ${doctor.description}</h2>
+          <h1>${doctor.profile.first_name} ${doctor.profile.last_name} </h1>
+          <h2>${doctor.practices[0].website} </h2>
+          <h2>${doctor.practices[0].phones} </h2>
+          <h3><em>Address:</em> ${doctor.practices[0].visit_address.street}, ${doctor.practices[0].visit_address.city}, ${doctor.practices[0].visit_address.state}, ${doctor.practices[0].visit_address.zip} </h3>
         </div>`
         );
-
       });
     });
   });
