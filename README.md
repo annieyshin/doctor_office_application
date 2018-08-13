@@ -13,7 +13,7 @@ Website that will call Better Doctors API to pull up doctor information based up
 
 | Behavior | Input | Output |
 |----------|-------|--------|
-| Behavior | input | output |
+| Finds doctors in the area | input | output |
 
 ## Setup on OSX
 
@@ -22,8 +22,8 @@ Website that will call Better Doctors API to pull up doctor information based up
 * Clone the repo
 * `npm install` to install dependencies
 * `npm run start` to build and start the dev server
-* `npm run lint` to explicitly run ESLint
-* `npm run test` to run the unit tests with Karma and Jasmine. Visit `localhost:9876` to view the tests.
+* create a file .env in the root directory of the Project
+* Paste: `exports.apiKey = "d84fc591114ca5070c741627753ce057";` into file .env
 
 ## Contribution Requirements
 
