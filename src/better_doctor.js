@@ -15,7 +15,7 @@ export class DoctorAPI {
         } else {
           reject(Error(request.statusText));
         }
-      }
+      };
       request.open("Get", url, true);
       request.send();
     });
