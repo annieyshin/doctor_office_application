@@ -23,7 +23,7 @@ Website that will call Better Doctors API to pull up doctor information based up
 * `npm install` to install dependencies
 * `npm run start` to build and start the dev server
 * create a file .env in the root directory of the Project
-* Paste: `exports.apiKey = "d84fc591114ca5070c741627753ce057";` into file .env
+* Paste: `exports.apiKey = "YOUR API KEY HERE";` into file .env
 
 ## Contribution Requirements
 
