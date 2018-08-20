@@ -16,18 +16,24 @@ $(document).ready(function() {
       console.log(body.data);
       body.data.forEach(function(doctor) {
       let website = doctor.practices[0].website;
+      let newPatients = doctor.practices[0].accepts_new_patients;
         for (let i = 0; i <= 0; i++) {
           if (website !== undefined) {
             website = doctor.practices[0].website;
-          }
-          else {
+          } else {
             website = "not available"
+          }
+          if (newPatients === true) {
+            newPatients = "Yes!";
+          } else {
+            newPatients = "not accepting new patients"
           }
           $('#results').append(
           `<div class="card">
             <h1> Name: ${doctor.profile.first_name} ${doctor.profile.last_name} </h1>
             <h3>Contact Info: ${doctor.practices[0].phones[i].number} </h3>
             <h3> Website: ${website}</h3>
+            <h3> Accepting new patients: ${newPatients}</h3>
             <h4>Address: ${doctor.practices[0].visit_address.street}, ${doctor.practices[0].visit_address.city}, ${doctor.practices[0].visit_address.state}, ${doctor.practices[0].visit_address.zip} </h4>
           </div>`
           );
