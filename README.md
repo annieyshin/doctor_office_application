@@ -6,7 +6,7 @@
 
 ## Description
 
-Website that will call Better Doctors API to pull up doctor information based upon user entered data. User will be able to enter a medical condition or search by doctor's name to find the right physicians and doctors in a given area based on medical condition or name query.
+Website that will call Better Doctors API to pull up doctor information based upon user entered data. User will be able to enter a medical condition or search by doctor's name to find the right physicians and doctors in the Portland, Oregon area based on medical condition or name query.
 
 
 ## Specs
