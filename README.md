@@ -13,7 +13,8 @@ Website that will call Better Doctors API to pull up doctor information based up
 
 | Behavior | Input | Output |
 |----------|-------|--------|
-| Finds doctors in the area | input | output |
+| Finds doctors in the Portland area based upon name | Type in first or surname of desired doctor | Returns a list of physicians that match the query or lets the user know that there is nothing in that search |
+| Finds doctors in the Portland area based upon specialty or area of practice | Type in medical condition or symptom to find doctors that specialize in that area | Returns a list of physicians that match the query or lets the user know that there is nothing in that search |
 
 ## Setup on OSX
 
