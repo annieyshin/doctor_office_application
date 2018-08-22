@@ -6,7 +6,7 @@
 
 ## Description
 
-Website that will call Better Doctors API to pull up doctor information based upon user entered data. User will be able to enter a medical condition or search by doctor's name to find the right physicians and doctors in the Portland, Oregon area based on medical condition or name query.
+Website that will call Better Doctors API to pull up doctor information based upon user entered data. User will be able to enter a medical issue or search by doctor's name to find the right physicians and doctors in the Portland, Oregon area based on medical condition or name query.
 
 
 ## Specs
@@ -14,7 +14,7 @@ Website that will call Better Doctors API to pull up doctor information based up
 | Behavior | Input | Output |
 |----------|-------|--------|
 | Finds doctors in the Portland area based upon name | Type in first or surname of desired doctor | Returns a list of physicians that match the query or lets the user know that there is nothing in that search |
-| Finds doctors in the Portland area based upon specialty or area of practice | Type in medical condition or symptom to find doctors that specialize in that area | Returns a list of physicians that match the query or lets the user know that there is nothing in that search |
+| Finds doctors in the Portland area based upon medical issue | Type in medical condition or symptom to find doctors that specialize in that area of medicine | Returns a list of physicians that match the query or lets the user know that there is nothing in that search |
 
 ## Setup on OSX
 
