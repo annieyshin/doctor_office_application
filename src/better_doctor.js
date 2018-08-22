@@ -8,7 +8,7 @@ export class DoctorAPI {
 
     return new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
-      let url = `http://www.zillow.com/webservice/GetRegionChildren.htm?&state=${state}&city=${city}&zws-id=${apiKey}`;
+      let url = `https://api.betterdoctor.com/2016-03-01/doctors?name=${name}&query=${query}&location=or-portland&limit=10&user_key=${apiKey}`;
       request.onload = function() {
         if (this.status === 200) {
           resolve(request.response);

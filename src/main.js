@@ -13,8 +13,6 @@ $(document).ready(function() {
     let promise = doctor.getDoctors({name: doctorName, query: doctorQuery});
     promise.then(function(response) {
       let body = JSON.parse(response);
-      console.log(body.data);
-      console.log(body.data.length);
       if (body.data.length === 0) {
         $('#results').append(
           '<h1>No doctors for this search query, try again</h1>'
