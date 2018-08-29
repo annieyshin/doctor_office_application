@@ -1,5 +1,3 @@
-const apiKey = require('./../.env').apiKey;
-
 export class DoctorAPI {
 
   getDoctors(attr) {
